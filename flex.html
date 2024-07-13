@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+         .item {
+           width: 200px;
+           height: 100px;
+           background-color: aquamarine;
+           border: 2px solid tomato;
+        }
+        .box{
+            background-color: slategrey;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        @media screen and (max-width: 576px){
+
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexible Flex</h1>
+    <div class="container">
+      <div class="box">
+        <h3>Box 1</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, fugiat pariatur mollitia aspernatur alias quisquam ratione cupiditate eius rerum reiciendis quibusdam nesciunt, laudantium voluptatum ipsum tempore exercitationem? Commodi, cupiditate ducimus.</p>
+      </div>
+      <div class="box">
+        <h3>Box 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magni molestiae accusamus quis magnam. Perferendis eligendi porro, ratione sed obcaecati, esse suscipit nostrum facilis amet dolores, soluta perspiciatis repellat odio.</p>
+      </div>
+    </div>
+    <div class="container2">
+        
+        <div class="item">Item - 1</div>
+        <div class="item">Item - 2</div>
+        <div class="item">Item - 3</div>
+        <div class="item">Item - 4</div>
+        <div class="item">Item - 5</div>
+        <div class="item">Item - 6</div>
+        <div class="item">Item - 7</div>
+        <div class="item">Item - 8</div>
+        <div class="item">Item - 9</div>
+        <div class="item">Item - 10</div>
+        
+    </div>
+</body>
+</html>
